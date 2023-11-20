@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__list-menu {
+    gap: 15px;
+  }
+}
