@@ -1,0 +1,66 @@
+.sitemap-body {
+  background-color: silver;
+  padding: 50px;
+}
+.sitemap-box {
+  width: 100px;
+  height: 100px;
+}
+.sitemap-box[title="--main-regular"] {
+  background: var(--main-regular);
+}
+.sitemap-box[title="--main-alt"] {
+  background: var(--main-alt);
+}
+.sitemap-box[title="--main-soft"] {
+  background: var(--main-soft);
+}
+.sitemap-box[title="--accent"] {
+  background: var(--accent);
+}
+.sitemap-box[title="--active-regular"] {
+  background: var(--active-regular);
+}
+.sitemap-box[title="--active-hover"] {
+  background: var(--active-hover);
+}
+.sitemap-box[title="--active-active"] {
+  background: var(--active-active);
+}
+.sitemap-box[title="--grey-bg"] {
+  background: var(--grey-bg);
+}
+.sitemap-box[title="--grey-bg-alt"] {
+  background: var(--grey-bg-alt);
+}
+.sitemap-box[title="--grey-text"] {
+  background: var(--grey-text);
+}
+.sitemap-box[title="--grey-separator"] {
+  background: var(--grey-separator);
+}
+.sitemap-box[title="--gradient-regular"] {
+  background: var(--gradient-regular);
+}
+.sitemap-box[title="--gradient-soft"] {
+  background: var(--gradient-soft);
+}
+.sitemap-box[title="--gradient-red"] {
+  background: var(--gradient-red);
+}
+.sitemap-box[title="--gradient-supersoft"] {
+  background: var(--gradient-supersoft);
+}
+.sitemap-box[title="--gradient-red-text"] {
+  background: var(--gradient-red-text);
+}
+.sitemap-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+hr {
+  margin: 50px;
+  border-color: var(--active-active);
+}
