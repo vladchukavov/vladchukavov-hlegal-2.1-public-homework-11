@@ -1,15 +1,13 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 364px 728px 478px;
+  grid-template-rows: 110px 407px;
   background: var(--gradient-supersoft);
   padding-bottom: 500px;
-  color: #fff;
 }
 .logo {
   padding-top: 50px;
 }
 .img {
-  //position: relative;
-  //left: 160px;
-
+  width: 872px;
 }

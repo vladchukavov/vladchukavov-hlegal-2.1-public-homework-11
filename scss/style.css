@@ -488,14 +488,18 @@ button:active {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 364px 728px 478px;
+  grid-template-rows: 110px 407px;
   background: var(--gradient-supersoft);
   padding-bottom: 500px;
-  color: #fff;
 }
 
 .logo {
   padding-top: 50px;
+}
+
+.img {
+  width: 872px;
 }
 
 .nav {
@@ -505,9 +509,49 @@ button:active {
 .nav__list {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+}
+.nav__list-contact {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  align-items: center;
+  padding-top: 50px;
+  min-width: 478px;
+}
+.nav__list-contact :nth-child(2) {
+  padding: 0 14px;
+}
+.nav__list-contact :nth-child(4), .nav__list-contact :nth-child(6), .nav__list-contact :nth-child(8) {
+  padding: 0 6px;
+}
+.nav__list-contact :nth-child(5) {
+  font-weight: 400;
+}
+.nav__list-contact :nth-child(7) {
+  font-size: 16px;
 }
 .nav__list-menu {
   gap: 15px;
+  font-weight: 700;
+  padding-top: 21px;
+  min-width: 416px;
+}
+.nav__link {
+  color: #fff;
+}
+
+.text {
+  font-size: 38px;
+  font-weight: 700;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: flex-end;
+  text-align: end;
+  margin: 0;
+  padding-right: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
