@@ -16,7 +16,7 @@
     padding-top: 50px;
     min-width: 478px;
     :nth-child(2) {
-     padding: 0 14px;
+      padding: 0 14px;
     }
     :nth-child(4), :nth-child(6), :nth-child(8) {
       padding: 0 6px;
@@ -28,6 +28,14 @@
       font-size: 16px;
     }
   }
+  &__link-active {
+    background-color: var(--accent);
+    border-radius: 8px;
+    padding: 5px 7px;
+    &:hover {
+      color: #fff;
+    }
+  }
   &__list-menu {
     gap: 15px;
     font-weight: 700;
@@ -37,14 +45,10 @@
   &__link {
     color: #fff;
   }
-}
-.text {
-  font-size: 38px;
-  font-weight: 700;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  align-self: flex-end;
-  text-align: end;
-  margin: 0;
-  padding-right: 12px;
+  &__icon {
+    fill: #fff;
+    &:hover {
+      fill: var(--accent);
+    }
+  }
 }

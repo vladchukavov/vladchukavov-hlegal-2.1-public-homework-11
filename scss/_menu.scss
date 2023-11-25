@@ -1,0 +1,35 @@
+.menu {
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    white-space: nowrap;
+    list-style: none;
+    justify-content: flex-end;
+    text-align: end;
+    padding-top: 74px;
+    margin: 0;
+
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--grey-text);
+  }
+
+  &__link-active {
+    background: (linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+      background: var(--accent);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
