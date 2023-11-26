@@ -53,6 +53,12 @@
     padding-top: 50px;
     min-width: 478px;
 
+    :nth-child(3) {
+      border-radius: 8px;
+      background: var(--accent);
+      padding: 5px 7px;
+    }
+
     :nth-child(2) {
       padding: 0 14px;
     }

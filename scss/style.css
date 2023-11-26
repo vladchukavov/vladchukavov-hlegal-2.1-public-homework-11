@@ -535,6 +535,11 @@ button:active {
   padding-top: 50px;
   min-width: 478px;
 }
+.nav__list-contact :nth-child(3) {
+  border-radius: 8px;
+  background: var(--accent);
+  padding: 5px 7px;
+}
 .nav__list-contact :nth-child(2) {
   padding: 0 14px;
 }
@@ -692,6 +697,59 @@ button:active {
   background: #E7E7F2;
   border-radius: 0 0 12px 12px;
   margin: 0 40px;
+}
+
+.team__box {
+  padding-top: 60px;
+  display: flex;
+  padding-bottom: 500px;
+}
+.team__img {
+  align-self: stretch;
+  border-radius: 12px 0 0 12px;
+}
+.team__container {
+  padding: 30px 30px;
+  background: var(--grey-bg);
+  border-radius: 0 12px 12px 0;
+  max-height: 298px;
+}
+.team__link, .team__arrow {
+  display: flex;
+  align-items: center;
+}
+.team__link {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.team__arrow {
+  stroke: #24A3FF;
+}
+.team__merge :hover .team__arrow {
+  stroke: var(--accent);
+}
+.team__header {
+  background: var(--gradient-red-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.team__name {
+  color: var(--grey-text);
+  font-weight: 700;
+  margin: 0;
+}
+.team__desc {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 1.57;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
