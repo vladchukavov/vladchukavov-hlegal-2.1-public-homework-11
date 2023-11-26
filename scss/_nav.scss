@@ -1,6 +1,42 @@
 .nav {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 364px 728px 500px;
+  grid-template-rows: 60px auto;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    padding-top: 50px;
+  }
+
+  &__img-symbol {
+    width: 728px;
+  }
+
+  &__slogan {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 477px;
+    padding-left: 160px;
+  }
+
+  &__scroll-btn {
+    stroke: white;
+    position: absolute;
+    top: 928px;
+    margin-left: 415px;
+
+    &:hover {
+      stroke: var(--accent);
+    }
+  }
+
   &__list {
     display: flex;
     list-style: none;
@@ -8,6 +44,7 @@
     margin: 0;
     justify-content: flex-end;
   }
+
   &__list-contact {
     font-size: 12px;
     letter-spacing: 1px;
@@ -15,38 +52,40 @@
     align-items: center;
     padding-top: 50px;
     min-width: 478px;
+
     :nth-child(2) {
       padding: 0 14px;
     }
+
     :nth-child(4), :nth-child(6), :nth-child(8) {
       padding: 0 6px;
     }
+
     :nth-child(5) {
       font-weight: 400;
     }
+
     :nth-child(7) {
       font-size: 16px;
     }
   }
-  &__link-active {
-    background-color: var(--accent);
-    border-radius: 8px;
-    padding: 5px 7px;
-    &:hover {
-      color: #fff;
-    }
-  }
+
   &__list-menu {
     gap: 15px;
     font-weight: 700;
     padding-top: 21px;
     min-width: 416px;
+    grid-column: 3 / 4;
+    padding-bottom: 900px;
   }
+
   &__link {
     color: #fff;
   }
+
   &__icon {
     fill: #fff;
+
     &:hover {
       fill: var(--accent);
     }
