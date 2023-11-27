@@ -1,0 +1,87 @@
+.clients {
+  padding-left: calc(50vw - 860px);
+  padding-right: calc(50vw - 860px);
+
+
+  &__header {
+    color: var(--main-regular);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:nth-child(1) {
+      background-color: #1C4280;
+      border-top-left-radius: 10px;
+    }
+
+    &:nth-child(2) {
+      background-color: #143646;
+    }
+
+    &:nth-child(3) {
+      background-color: #F48B30;
+    }
+
+    &:nth-child(4) {
+      background-color: #9E4DC3;
+      border-top-right-radius: 10px;
+    }
+
+    &:nth-child(5) {
+      background-color: #FD9339;
+    }
+
+    &:nth-child(6) {
+      background-color: #E2E2E4;
+    }
+
+    &:nth-child(7) {
+      background-color: #C71C36;
+    }
+
+    &:nth-child(8) {
+      background-color: #DCF3F9;;
+    }
+
+    &:nth-child(9) {
+      background-color: #DCF3F9;
+      border-bottom-left-radius: 10px;
+    }
+
+    &:nth-child(10) {
+      background-color: #282240;
+    }
+
+    &:nth-child(11) {
+      background-color: #1D4568;
+    }
+
+    &:nth-child(12) {
+      background-color: #000;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
