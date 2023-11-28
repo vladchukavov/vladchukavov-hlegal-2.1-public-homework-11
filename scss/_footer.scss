@@ -1,10 +1,16 @@
 .footer {
   background: var(--grey-bg);
 
+  &__hl {
+    border: none;
+    height: 2px;
+    background: var(--grey-separator);
+    margin: 30px 0;
+  }
+
   &__nav {
     display: flex;
     justify-content: space-between;
-
   }
 
   &__list {

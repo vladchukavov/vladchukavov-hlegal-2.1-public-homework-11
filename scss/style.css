@@ -889,7 +889,6 @@ input:checked + .team__slide {
 .publications {
   padding-top: 30px;
   background: var(--grey-bg);
-  padding-bottom: 30px;
 }
 .publications__item, .publications__arrow {
   display: flex;
@@ -965,11 +964,16 @@ input:checked + .team__slide {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.57;
-  padding-bottom: 30px;
 }
 
 .footer {
   background: var(--grey-bg);
+}
+.footer__hl {
+  border: none;
+  height: 2px;
+  background: var(--grey-separator);
+  margin: 30px 0;
 }
 .footer__nav {
   display: flex;
