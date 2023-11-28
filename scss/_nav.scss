@@ -1,7 +1,7 @@
 .nav {
   display: grid;
   grid-template-columns: 364px 728px 500px;
-  grid-template-rows: 60px auto;
+  grid-template-rows: 60px 900px;
 
   &__container {
     display: flex;
@@ -83,11 +83,28 @@
     padding-top: 21px;
     min-width: 416px;
     grid-column: 3 / 4;
-    padding-bottom: 900px;
+
   }
 
   &__link {
     color: #fff;
+  }
+
+  &__link_services-active {
+    color: var(--accent);
+
+    &::after {
+      margin-top: 3px;
+      height: 2px;
+      background-color: currentColor;
+      content: "";
+      display: block;
+    }
+
+    &:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+    }
   }
 
   &__icon {
@@ -98,4 +115,9 @@
       transition: 0.5s;
     }
   }
+}
+
+.services-nav {
+  display: grid;
+  grid-template-rows: 60px 60px;
 }

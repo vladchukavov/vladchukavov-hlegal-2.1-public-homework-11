@@ -1,0 +1,40 @@
+.offer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+  }
+
+  &__header {
+    font-size: 38px;
+    font-weight: 700;
+    background: var(--gradient-red-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__desc {
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.58;
+    text-align: center;
+    width: 1360px;
+  }
+
+  &__btn {
+    box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.50);
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 700px;
+    margin-bottom: 60px;
+  }
+
+  &__hl {
+    height: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.50);
+    margin: 0 120px 30px 120px;
+  }
+}
