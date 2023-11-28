@@ -39,6 +39,7 @@
 
     :hover .services__arrow {
       stroke: var(--accent);
+      transition: 0.5s;
     }
   }
 
@@ -65,8 +66,9 @@
     background-color: #fff;
     padding: 14px 14px;
 
-    :hover {
+    &:hover {
       opacity: 0.5;
+      transition: 0.3s;
     }
   }
 

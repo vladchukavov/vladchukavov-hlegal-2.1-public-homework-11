@@ -40,6 +40,11 @@
     cursor: pointer;
     font-size: 0;
     overflow: hidden;
+
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
   }
 
   &__toggle-active {
@@ -49,6 +54,13 @@
   &__img {
     align-self: stretch;
     border-radius: 12px 0 0 12px;
+    
+
+    &:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+      cursor: pointer;
+    }
   }
 
   &__container {
@@ -76,6 +88,7 @@
   &__merge {
     :hover .team__arrow {
       stroke: var(--accent);
+      transition: 0.5s;
     }
   }
 

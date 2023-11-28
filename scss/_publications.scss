@@ -23,6 +23,8 @@
 
     :hover .publications__arrow {
       stroke: var(--accent);
+      transition: 0.5s;
+
     }
   }
 
@@ -59,6 +61,11 @@
     width: 513px;
     max-height: 200px;
     border-radius: 8px 8px 0 0;
+
+    &:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+    }
   }
 
   &__text {
@@ -67,6 +74,7 @@
 
     &:hover {
       color: var(--accent);
+      transition: 0.5s;
     }
   }
 

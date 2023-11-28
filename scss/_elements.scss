@@ -1,18 +1,23 @@
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--main-regular);
   font-weight: 400;
   line-height: 1.62;
 }
+
 a {
   color: var(--active-regular);
   text-decoration: none;
+
   &:hover {
     color: var(--accent);
+    transition: 0.5s;
   }
 }
+
 ul {
   list-style: none;
 }
+
 ul li::before {
   content: "•";
   display: inline-block;
@@ -21,9 +26,11 @@ ul li::before {
   margin-left: -1em;
   color: var(--accent);
 }
+
 ol li::marker {
   color: var(--accent);
 }
+
 button {
   padding: 18px 30px;
   background: var(--active-regular);
@@ -31,9 +38,11 @@ button {
   border: none;
   min-width: 208px;
   color: #fff;
+
   &:hover {
-  background: var(--active-hover);
-}
+    background: var(--active-hover);
+  }
+
   &:active {
     background: var(--active-active);
   }

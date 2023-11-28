@@ -34,6 +34,7 @@
 
     &:hover {
       stroke: var(--accent);
+      transition: 0.5s;
     }
   }
 
@@ -94,6 +95,7 @@
 
     &:hover {
       fill: var(--accent);
+      transition: 0.5s;
     }
   }
 }
