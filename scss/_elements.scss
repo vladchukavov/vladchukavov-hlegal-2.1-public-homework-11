@@ -29,6 +29,7 @@ ul li::before {
 
 ol li::marker {
   color: var(--accent);
+  font-weight: bold;
 }
 
 button {

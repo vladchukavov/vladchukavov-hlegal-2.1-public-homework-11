@@ -477,6 +477,7 @@ ul li::before {
 
 ol li::marker {
   color: var(--accent);
+  font-weight: bold;
 }
 
 button {
@@ -497,6 +498,10 @@ button:active {
 
 .header {
   background: var(--gradient-supersoft);
+  border-radius: 0 0 12px 12px;
+}
+
+.publications-header {
   border-radius: 0 0 12px 12px;
 }
 
@@ -553,6 +558,7 @@ button:active {
   border-radius: 8px;
   background: var(--accent);
   padding: 5px 7px;
+  color: #fff;
 }
 .nav__list-contact :nth-child(2) {
   padding: 0 14px;
@@ -565,6 +571,9 @@ button:active {
 }
 .nav__list-contact :nth-child(7) {
   font-size: 16px;
+}
+.nav__link-active {
+  color: #fff;
 }
 .nav__list-menu {
   gap: 15px;
@@ -601,6 +610,14 @@ button:active {
 .services-nav {
   display: grid;
   grid-template-rows: 60px 60px;
+}
+
+.publications-header__link, .publications-header__icon {
+  color: var(--grey-text);
+  fill: var(--grey-text);
+}
+.publications-header__link-none {
+  color: var(--active-regular);
 }
 
 .menu {
@@ -1121,6 +1138,81 @@ input:checked + .team__slide {
   border: none;
   background: rgba(255, 255, 255, 0.5);
   margin: 0 120px 30px 120px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px 120px;
+}
+.post__img, .post__news, .post__data, .post__hl, .post__desc, .post__header, .post__item, .post__text_img {
+  width: 1360px;
+}
+.post__img {
+  border-radius: 12px;
+}
+.post__news {
+  font-size: 30px;
+  font-weight: 700;
+}
+.post__data {
+  color: var(--grey-text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.post__hl {
+  height: 4px;
+  border: none;
+  background: var(--grey-separator);
+  margin: 0;
+}
+.post__desc {
+  color: #000;
+  line-height: 1.62;
+}
+.post__header_hero {
+  background: var(--gradient-red-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+}
+.post__header {
+  font-size: 22px;
+  font-weight: 700;
+}
+.post__item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.44;
+}
+.post__img_setting {
+  max-width: 640px;
+  padding-left: 360px;
+}
+.post__text_img {
+  color: var(--grey-text);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.57;
+}
+.post__container {
+  display: flex;
+  gap: 28px;
+  padding-top: 30px;
+}
+.post__socnetwork {
+  border-radius: 12px;
+  padding: 9px;
+  background: var(--grey-bg);
+}
+.post__socnetwork:hover {
+  background: var(--grey-bg-alt);
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
