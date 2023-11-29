@@ -10,13 +10,14 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 7px;
+
   }
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 530px);
+    grid-template-rows: repeat(3, 120px);
     margin: 0;
     padding-bottom: 60px;
   }

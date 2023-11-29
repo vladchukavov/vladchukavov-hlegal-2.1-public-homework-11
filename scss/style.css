@@ -338,8 +338,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50vw - 800px);
-  padding-right: calc(50vw - 800px);
+  padding-left: calc(50vw - 808px);
+  padding-right: calc(50vw - 808px);
 }
 
 :root {
@@ -508,7 +508,7 @@ button:active {
 .nav {
   display: grid;
   grid-template-columns: 364px 728px 500px;
-  grid-template-rows: 60px 900px;
+  grid-template-rows: 60px 940px;
 }
 .nav__container {
   display: flex;
@@ -526,7 +526,7 @@ button:active {
   margin: 0;
   color: #fff;
   position: absolute;
-  top: 477px;
+  top: 467px;
   padding-left: 160px;
 }
 .nav__scroll-btn {
@@ -542,9 +542,6 @@ button:active {
 .nav__list {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: flex-end;
 }
 .nav__list-contact {
   font-size: 12px;
@@ -561,16 +558,18 @@ button:active {
   color: #fff;
 }
 .nav__list-contact :nth-child(2) {
-  padding: 0 14px;
+  padding: 0 7px 0 14px;
 }
 .nav__list-contact :nth-child(4), .nav__list-contact :nth-child(6), .nav__list-contact :nth-child(8) {
-  padding: 0 6px;
+  padding: 0 4.5px 0 4px;
 }
 .nav__list-contact :nth-child(5) {
   font-weight: 400;
+  font-size: 14px;
 }
 .nav__list-contact :nth-child(7) {
   font-size: 16px;
+  padding-left: 1px;
 }
 .nav__link-active {
   color: #fff;
@@ -578,9 +577,10 @@ button:active {
 .nav__list-menu {
   gap: 15px;
   font-weight: 700;
-  padding-top: 21px;
-  min-width: 416px;
+  padding-top: 16px;
+  padding-left: 95px;
   grid-column: 3/4;
+  white-space: nowrap;
 }
 .nav__link {
   color: #fff;
@@ -622,7 +622,7 @@ button:active {
 
 .menu {
   display: grid;
-  grid-template-columns: auto 120px auto;
+  grid-template-columns: 495px 120px auto;
 }
 .menu__info {
   display: flex;
@@ -658,11 +658,15 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 5px;
+  padding-left: 5px;
 }
 .menu__header {
   color: #fff;
   font-size: 30px;
   font-weight: 700;
+  margin: 0;
+  padding-top: 10px;
 }
 .menu__desc {
   grid-column: 2/4;
@@ -670,12 +674,15 @@ button:active {
   font-size: 19px;
   line-height: 1.58;
   max-width: 861px;
+  padding-top: 2px;
 }
 
 .services {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 493px 493px auto;
+  grid-template-rows: auto auto 355px;
   gap: 0 60px;
+  margin-bottom: 45px;
 }
 .services :nth-child(3), .services :nth-child(4), .services :nth-child(5) {
   grid-row: 3/4;
@@ -720,7 +727,7 @@ button:active {
 .services__container {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 53px;
 }
 .services__img {
   border-radius: 24px;
@@ -772,13 +779,15 @@ button:active {
 .shadow-dark {
   background: #CACADB;
   border-radius: 0 0 12px 12px;
-  margin: 0 20px;
+  margin: 0 10px;
+  height: 10px;
 }
 
 .shadow-light {
   background: #E7E7F2;
   border-radius: 0 0 12px 12px;
-  margin: 0 40px;
+  margin: 0 20px;
+  height: 10px;
 }
 
 .shadow-light-services {
@@ -868,6 +877,7 @@ input:checked + .team__slide {
   -webkit-text-fill-color: transparent;
   font-size: 38px;
   font-weight: 700;
+  padding-top: 6px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -894,12 +904,12 @@ input:checked + .team__slide {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 7px;
 }
 .clients__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 530px);
+  grid-template-rows: repeat(3, 120px);
   margin: 0;
   padding-bottom: 60px;
 }

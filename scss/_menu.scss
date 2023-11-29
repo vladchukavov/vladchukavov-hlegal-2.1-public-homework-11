@@ -1,6 +1,6 @@
 .menu {
   display: grid;
-  grid-template-columns: auto 120px auto;
+  grid-template-columns: 495px 120px auto;
 
   &__info {
     display: flex;
@@ -41,12 +41,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 5px;
+    padding-left: 5px;
   }
 
   &__header {
     color: #fff;
     font-size: 30px;
     font-weight: 700;
+    margin: 0;
+    padding-top: 10px;
   }
 
   &__desc {
@@ -55,5 +59,6 @@
     font-size: 19px;
     line-height: 1.58;
     max-width: 861px;
+    padding-top: 2px;
   }
 }
