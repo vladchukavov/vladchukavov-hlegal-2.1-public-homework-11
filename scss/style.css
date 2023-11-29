@@ -816,6 +816,18 @@ button:active {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1440px) {
+  .services {
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto auto 381px;
+  }
+  .services__header {
+    grid-column: 1/4;
+  }
+  .services__br {
+    display: none;
+  }
+}
 .shadow-dark {
   background: #CACADB;
   border-radius: 0 0 12px 12px;

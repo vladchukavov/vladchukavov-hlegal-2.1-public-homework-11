@@ -122,3 +122,19 @@
   grid-row: 1 / 3;
   margin-top: 60px;
 }
+
+@media screen and (max-width: 1440px) {
+  .services {
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto auto 381px;
+
+    &__header {
+      grid-column: 1 / 4;
+    }
+
+    &__br {
+      display: none;
+    }
+  }
+
+}
