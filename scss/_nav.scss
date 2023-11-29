@@ -141,3 +141,36 @@
   }
 
 }
+
+@media screen and (max-width: 1601px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 364px 678px 500px;
+    grid-template-rows: 60px 940px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 255px 558px 500px;
+    grid-template-rows: 60px 741px;
+
+    &__img-symbol {
+      width: 697px;
+      height: 799px;
+    }
+
+    &__slogan {
+      top: 370px;
+      padding-left: 130px;
+    }
+
+    &__scroll-btn {
+      stroke: white;
+      position: absolute;
+      top: 727px;
+      margin-left: 385px;
+    }
+  }
+}

@@ -17,3 +17,17 @@ body {
   padding-left: calc(50vw - 808px);
   padding-right: calc(50vw - 808px);
 }
+
+@media screen and (max-width: 1601px) {
+  .center {
+    padding-left: calc(50vw - 780px);
+    padding-right: calc(50vw - 780px);
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .center {
+    padding-left: calc(50vw - 670px);
+    padding-right: calc(50vw - 670px);
+  }
+}

@@ -5,12 +5,14 @@
     border: none;
     height: 2px;
     background: var(--grey-separator);
-    margin: 30px 0;
+    margin: 50px 0 0 0;
   }
 
   &__nav {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+
   }
 
   &__list {
@@ -19,6 +21,11 @@
     gap: 10px;
     list-style: none;
     padding: 0;
+    margin: 0;
+  }
+
+  &__list-places {
+    padding-top: 23px;
   }
 
   &__list-places li {
@@ -42,6 +49,10 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
+  }
+
+  &__list-contact {
+    padding-top: 18px;
   }
 
   &__list-contact li {

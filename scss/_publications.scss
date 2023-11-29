@@ -1,5 +1,5 @@
 .publications {
-  padding-top: 30px;
+  padding-top: 35.5px;
   background: var(--grey-bg);
 
 
@@ -36,7 +36,7 @@
     font-size: 38px;
     font-weight: 700;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 23px;
   }
 
   &__container {
@@ -60,6 +60,7 @@
     width: 513px;
     max-height: 200px;
     border-radius: 8px 8px 0 0;
+    padding-bottom: 1px;
 
     &:hover {
       opacity: 0.5;
@@ -70,6 +71,8 @@
   &__text {
     color: var(--active-regular);
     font-weight: 700;
+    margin: 0;
+    padding-top: 27px;
 
     &:hover {
       color: var(--accent);
@@ -83,11 +86,17 @@
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin: 0;
+    padding-top: 17.5px;
+
+    &:nth-child(2) {
+
+    }
   }
 
   &__line {
     height: 4px;
-    margin: 0;
+    padding-top: 15px;
   }
 
   &__desc {
@@ -96,5 +105,14 @@
     font-weight: 400;
     line-height: 1.57;
 
+  }
+}
+
+@media screen and (max-width: 1601px) {
+  .publications {
+    &__container {
+      display: flex;
+      gap: 12px;
+    }
   }
 }

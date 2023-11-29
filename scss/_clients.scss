@@ -1,5 +1,5 @@
 .clients {
-  padding-left: calc(50vw - 860px);
+  padding-left: calc(50vw - 868px);
   padding-right: calc(50vw - 860px);
 
 
@@ -16,7 +16,7 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(4, 530px);
+    grid-template-columns: repeat(4, 430px);
     grid-template-rows: repeat(3, 120px);
     margin: 0;
     padding-bottom: 60px;
@@ -89,4 +89,34 @@
 
 .clients__header-services {
   margin-top: 60px;
+}
+
+@media screen and (max-width: 1700px) {
+  .clients {
+    padding-left: calc(50vw - 840px);
+    padding-right: calc(50vw - 840px);
+
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(4, 420px);
+      grid-template-rows: repeat(3, 120px);
+      margin: 0;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1601px) {
+  .clients {
+    padding-left: calc(50vw - 840px);
+    padding-right: calc(50vw - 840px);
+
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(4, 395.5px);
+      grid-template-rows: repeat(3, 120px);
+      margin: 0;
+      padding-bottom: 60px;
+    }
+  }
 }

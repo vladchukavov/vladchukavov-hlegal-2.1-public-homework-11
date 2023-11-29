@@ -342,6 +342,18 @@ body {
   padding-right: calc(50vw - 808px);
 }
 
+@media screen and (max-width: 1601px) {
+  .center {
+    padding-left: calc(50vw - 780px);
+    padding-right: calc(50vw - 780px);
+  }
+}
+@media screen and (max-width: 1441px) {
+  .center {
+    padding-left: calc(50vw - 670px);
+    padding-right: calc(50vw - 670px);
+  }
+}
 :root {
   --main-regular: #323264;
   --main-alt: #46466E;
@@ -620,6 +632,34 @@ button:active {
   color: var(--active-regular);
 }
 
+@media screen and (max-width: 1601px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 364px 678px 500px;
+    grid-template-rows: 60px 940px;
+  }
+}
+@media screen and (max-width: 1441px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 255px 558px 500px;
+    grid-template-rows: 60px 741px;
+  }
+  .nav__img-symbol {
+    width: 697px;
+    height: 799px;
+  }
+  .nav__slogan {
+    top: 370px;
+    padding-left: 130px;
+  }
+  .nav__scroll-btn {
+    stroke: white;
+    position: absolute;
+    top: 727px;
+    margin-left: 385px;
+  }
+}
 .menu {
   display: grid;
   grid-template-columns: 495px 120px auto;
@@ -894,7 +934,7 @@ input:checked + .team__slide {
 }
 
 .clients {
-  padding-left: calc(50vw - 860px);
+  padding-left: calc(50vw - 868px);
   padding-right: calc(50vw - 860px);
 }
 .clients__header {
@@ -908,7 +948,7 @@ input:checked + .team__slide {
 }
 .clients__container {
   display: grid;
-  grid-template-columns: repeat(4, 530px);
+  grid-template-columns: repeat(4, 430px);
   grid-template-rows: repeat(3, 120px);
   margin: 0;
   padding-bottom: 60px;
@@ -968,8 +1008,34 @@ input:checked + .team__slide {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1700px) {
+  .clients {
+    padding-left: calc(50vw - 840px);
+    padding-right: calc(50vw - 840px);
+  }
+  .clients__container {
+    display: grid;
+    grid-template-columns: repeat(4, 420px);
+    grid-template-rows: repeat(3, 120px);
+    margin: 0;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1601px) {
+  .clients {
+    padding-left: calc(50vw - 840px);
+    padding-right: calc(50vw - 840px);
+  }
+  .clients__container {
+    display: grid;
+    grid-template-columns: repeat(4, 395.5px);
+    grid-template-rows: repeat(3, 120px);
+    margin: 0;
+    padding-bottom: 60px;
+  }
+}
 .publications {
-  padding-top: 30px;
+  padding-top: 35.5px;
   background: var(--grey-bg);
 }
 .publications__item, .publications__arrow {
@@ -997,7 +1063,7 @@ input:checked + .team__slide {
   font-size: 38px;
   font-weight: 700;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
 }
 .publications__container {
   display: flex;
@@ -1017,6 +1083,7 @@ input:checked + .team__slide {
   width: 513px;
   max-height: 200px;
   border-radius: 8px 8px 0 0;
+  padding-bottom: 1px;
 }
 .publications__img:hover {
   opacity: 0.5;
@@ -1025,6 +1092,8 @@ input:checked + .team__slide {
 .publications__text {
   color: var(--active-regular);
   font-weight: 700;
+  margin: 0;
+  padding-top: 27px;
 }
 .publications__text:hover {
   color: var(--accent);
@@ -1036,10 +1105,12 @@ input:checked + .team__slide {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 17.5px;
 }
 .publications__line {
   height: 4px;
-  margin: 0;
+  padding-top: 15px;
 }
 .publications__desc {
   color: #000;
@@ -1048,6 +1119,12 @@ input:checked + .team__slide {
   line-height: 1.57;
 }
 
+@media screen and (max-width: 1601px) {
+  .publications__container {
+    display: flex;
+    gap: 12px;
+  }
+}
 .footer {
   background: var(--grey-bg);
 }
@@ -1055,11 +1132,12 @@ input:checked + .team__slide {
   border: none;
   height: 2px;
   background: var(--grey-separator);
-  margin: 30px 0;
+  margin: 50px 0 0 0;
 }
 .footer__nav {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 .footer__list {
   display: flex;
@@ -1067,6 +1145,10 @@ input:checked + .team__slide {
   gap: 10px;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+.footer__list-places {
+  padding-top: 23px;
 }
 .footer__list-places li:nth-child(1) {
   background: var(--main-regular);
@@ -1085,6 +1167,9 @@ input:checked + .team__slide {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.footer__list-contact {
+  padding-top: 18px;
 }
 .footer__list-contact li {
   font-weight: 700;
