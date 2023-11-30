@@ -14,6 +14,11 @@
 
   &__img-symbol {
     width: 728px;
+    cursor: revert;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__slogan {
@@ -41,7 +46,6 @@
   &__list {
     display: flex;
     list-style: none;
-
   }
 
   &__list-contact {
@@ -88,6 +92,7 @@
   &__list-menu {
     gap: 15px;
     font-weight: 700;
+    font-size: 38px;
     padding-top: 16px;
     padding-left: 95px;
     grid-column: 3 / 4;
@@ -144,15 +149,13 @@
 
 @media screen and (max-width: 1601px) {
   .nav {
-    display: grid;
     grid-template-columns: 364px 678px 500px;
     grid-template-rows: 60px 940px;
   }
 }
 
-@media screen and (max-width: 1441px) {
+@media screen and (max-width: 1440px) {
   .nav {
-    display: grid;
     grid-template-columns: 255px 558px 500px;
     grid-template-rows: 60px 741px;
 
@@ -167,10 +170,117 @@
     }
 
     &__scroll-btn {
-      stroke: white;
-      position: absolute;
       top: 727px;
       margin-left: 385px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav {
+    grid-template-columns: 61px 335px 500px;
+    grid-template-rows: 60px 710px;
+
+    &__img-symbol {
+      width: 669.957px;
+      height: 768px;
+    }
+
+    &__slogan {
+      top: 353px;
+      padding-left: 117px;
+    }
+
+    &__scroll-btn {
+      top: 696px;
+      margin-left: 372px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    grid-template-columns: 48px 335px 500px;
+    grid-template-rows: 60px 60px 965px;
+
+    &__img-symbol {
+      width: 893.277px;
+      height: 1024px;
+      position: absolute;
+      left: -138px;
+    }
+
+    &__slogan {
+      top: 483px;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    &__scroll-btn {
+      top: 952px;
+      margin-left: 255px;
+    }
+
+    &__list-contact {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      z-index: 1;
+      padding-left: 9px;
+    }
+
+    &__logo {
+      grid-row: 2 / 3;
+      padding-top: 45px;
+    }
+
+    &__list-menu {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      z-index: 1;
+      padding-left: 1px;
+      padding-top: 61px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    grid-template-columns: 48px 335px 500px;
+    grid-template-rows: 60px 60px 500px;
+
+    &__img-symbol {
+      width: 523.404px;
+      height: 600px;
+      flex-shrink: 0;
+      position: absolute;
+      left: -98px;
+    }
+
+    &__slogan {
+      top: 225px;
+      padding-left: 35px;
+      white-space: normal;
+    }
+
+    &__scroll-btn {
+      top: 528px;
+      margin-left: 105px;
+    }
+
+    &__list-contact {
+    }
+
+    &__logo {
+      grid-row: 2 / 3;
+      padding-top: 45px;
+    }
+
+    &__list-contact {
+      //display: none;
+    }
+
+    &__list-menu {
+      //display: none;
     }
   }
 }

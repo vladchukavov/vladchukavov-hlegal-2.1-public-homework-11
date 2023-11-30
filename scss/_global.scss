@@ -25,9 +25,30 @@ body {
   }
 }
 
-@media screen and (max-width: 1441px) {
+@media screen and (max-width: 1440px) {
   .center {
-    padding-left: calc(50vw - 670px);
-    padding-right: calc(50vw - 670px);
+    padding-left: calc(50vw - 667px);
+    padding-right: calc(50vw - 667px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .center {
+    padding-left: calc(50vw - 460px);
+    padding-right: calc(50vw - 460px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .center {
+    padding-left: calc(50vw - 325px);
+    padding-right: calc(50vw - 325px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .center {
+    padding-left: calc(50vw - 172px);
+    padding-right: calc(50vw - 172px);
   }
 }

@@ -12,7 +12,6 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-
   }
 
   &__list {
@@ -25,7 +24,7 @@
   }
 
   &__list-places {
-    padding-top: 23px;
+    //padding-top: 23px;
   }
 
   &__list-places li {
@@ -92,3 +91,34 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .footer {
+    &__nav-places {
+      padding-top: 18px;
+    }
+
+    &__list-contact {
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    &__nav-places {
+      padding-top: 20px;
+    }
+
+    &__list-contact {
+      padding-top: 2px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    &__hl {
+      margin: 28px 0 0 0;
+    }
+  }
+}
