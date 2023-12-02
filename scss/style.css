@@ -1960,12 +1960,6 @@ input:checked + .team__slide {
   margin: 0 120px 30px 120px;
 }
 
-@media screen and (max-width: 1280px) {
-  .offer__btn {
-    margin-left: 660px;
-    margin-bottom: 60px;
-  }
-}
 .post {
   display: flex;
   flex-direction: column;
