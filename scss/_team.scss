@@ -63,6 +63,10 @@
     border-radius: 12px 0 0 12px;
   }
 
+  &__img_mobile {
+    display: none;
+  }
+
   &__container {
     padding: 30px 30px;
     background: var(--grey-bg);
@@ -188,12 +192,50 @@
       height: 500px;
     }
 
+    &__container {
+      border-radius: 0 0 12px 12px;
+    }
+
     &__content {
       margin-bottom: 670px;
     }
 
     &__br {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team {
+    margin-top: 30px;
+    margin-left: 15px;
+
+    &__flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img_media {
+      display: none;
+    }
+
+    &__img_mobile {
+      display: block;
+      width: 315px;
+      height: 500px;
+    }
+
+    &__container {
+      width: 255px;
+    }
+
+    &__header {
+      font-size: 30px;
+    }
+
+    &__content {
+      margin-bottom: 819px;
     }
   }
 }

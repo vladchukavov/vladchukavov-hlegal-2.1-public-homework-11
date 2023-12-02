@@ -137,10 +137,20 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .menu {
+    padding-left: 14px;
+
+    &__container {
+      padding-bottom: 30px;
+    }
+
     &__link {
       font-size: 30px
+    }
+
+    &__hr {
+      margin: 30px 14px 25px 0;
     }
 
     &__header {
@@ -149,6 +159,8 @@
 
     &__desc {
       font-size: 19px;
+      width: 315px;
+      padding-top: 10px;
     }
   }
 }

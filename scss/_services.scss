@@ -189,3 +189,31 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    margin-bottom: 40px;
+
+
+    &__header {
+      font-size: 30px;
+    }
+
+    &__container {
+      padding: 15px 0;
+    }
+
+    &__link {
+      padding-bottom: 15px;
+
+    }
+
+    &__desc {
+      width: 315px;
+      margin: 0;
+    }
+  }
+}

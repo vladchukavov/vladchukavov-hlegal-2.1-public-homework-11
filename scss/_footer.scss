@@ -23,10 +23,6 @@
     margin: 0;
   }
 
-  &__list-places {
-    //padding-top: 23px;
-  }
-
   &__list-places li {
     &:nth-child(1) {
       background: var(--main-regular);
@@ -89,6 +85,10 @@
   &__policy {
     color: var(--grey-text);
   }
+
+  &__policy_mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -119,6 +119,43 @@
   .footer {
     &__hl {
       margin: 28px 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+
+    &__nav {
+      flex-direction: column;
+    }
+
+    &__list {
+      flex-direction: column;
+      padding-top: 25px;
+    }
+
+    &__list-places li {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    &__list-contact li {
+
+      &:nth-child(2), &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    &__policy {
+      display: none;
+    }
+
+    &__policy_mobile {
+      display: block;
+      text-align: center;
+      padding-top: 5px;
     }
   }
 }

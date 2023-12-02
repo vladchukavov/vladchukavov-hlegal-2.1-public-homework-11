@@ -14,8 +14,13 @@
 <header class="center header">
     <nav class="nav">
         <a href="index.html"
-           class="nav__logo"><img src="img/homepage/homepage-logo.png"
-                                  alt="hlegal logo">
+           class="nav__logo">
+            <img class="nav__logo_mobile"
+                 src="img/homepage/logo-mobile-homapage.png"
+                 alt="hlegal logo">
+            <img class="nav__logo_descktop"
+                 src="img/homepage/homepage-logo.png"
+                 alt="hlegal logo">
         </a>
         <div class="nav__container">
             <img src="img/homepage/homepage-symbol.svg"
@@ -118,18 +123,29 @@
                 </svg>
             </a></li>
         </ol>
+        <input type="checkbox"
+               name="open_menu"
+               id="open_menu"
+               hidden
+        >
         <ol class="nav__list nav__list-menu">
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="#">about us</a></li>
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="pages/services.html">services</a></li>
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="#">team</a></li>
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="pages/publications.html">publications</a></li>
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="#">contact</a></li>
         </ol>
+        <label class="nav__menu"
+               for="open_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </nav>
     <nav class="menu">
         <ol class="menu__info">
@@ -263,6 +279,9 @@
                         <img src="img/team/image.jpg"
                              alt="Alexander Alexandrovsky"
                              class="team__img">
+                        <img src="img/team/team-1-height-500.jpg"
+                             alt="Alexander Alexandrovsky"
+                             class="team__img_mobile">
                         <div class="team__container">
                             <div class="team__merge">
                                 <a class="team__link"
@@ -483,9 +502,9 @@
                 </svg>
             </a>
         </div>
-        <h2 class="publications__header">
+        <p class="publications__header">
             We have something to tell
-        </h2>
+        </p>
         <div class="publications__container">
             <div class="publications__box">
                 <a class="publications__link"
@@ -502,7 +521,6 @@
                     <img class="publications__img_tablet"
                          src="img/publication/publication-1-tablet-SD.jpg"
                          alt="">
-
                 </a>
                 <a class="publications__link"
                    href="#">
@@ -533,7 +551,7 @@
                     <img class="publications__img_small"
                          src="img/publication/publication-2-small.jpg"
                          alt="">
-                    <img class="publications__img_tablet"
+                    <img class="publications__img_tablet "
                          src="img/publication/publication-2-tablet-SD.jpg"
                          alt="">
                 </a>
@@ -565,8 +583,11 @@
                     <img class="publications__img_small"
                          src="img/publication/publication-3-small.jpg"
                          alt="">
-                    <img class="publications__img_tablet"
+                    <img class="publications__img_tablet publications__img_tablet-hidden"
                          src="img/publication/publication-3-tablet-SD.jpg"
+                         alt="">
+                    <img class="publications__img_mobile "
+                         src="img/publication/publication-3-mobile.jpg"
                          alt="">
                 </a>
                 <a class="publications__link"
@@ -663,6 +684,7 @@
             <li><a href="#">contact@forstudy.space</a></li>
         </ol>
     </nav>
+    <p class="footer__policy footer__policy_mobile">© 2021 HLEGAL Law company, LLC</p>
 </footer>
 </body>
 </html>
