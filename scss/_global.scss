@@ -52,3 +52,10 @@ body {
     padding-right: calc(50vw - 172px);
   }
 }
+
+@media screen and (max-width: 320px) {
+  .center {
+    padding-left: calc(50vw - 152px);
+    padding-right: calc(50vw - 152px);
+  }
+}

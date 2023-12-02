@@ -247,3 +247,15 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .publications {
+    padding-left: 23px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .publications {
+    padding-left: 2.5px;
+  }
+}

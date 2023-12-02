@@ -88,18 +88,29 @@
                 </svg>
             </a></li>
         </ol>
+        <input type="checkbox"
+               name="open_menu"
+               id="open_menu"
+               hidden
+        >
         <ol class="nav__list nav__list-menu">
-            <li class="nav__item"><a class="nav__link"
-                                     href="#">about us</a></li>
-            <li class="nav__item"><a class="nav__link nav__link_services-active"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
+                                     href="../index.html">about us</a></li>
+            <li class="nav__item"><a class="nav__link nav__link_services-active nav__link_mobile"
                                      href="services.html">services</a></li>
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="#">team</a></li>
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="publications.html">publications</a></li>
-            <li class="nav__item"><a class="nav__link"
+            <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="#">contact</a></li>
         </ol>
+        <label class="nav__menu"
+               for="open_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </nav>
     <section class="offer">
         <div class="offer__container">
@@ -179,21 +190,31 @@
                 </svg>
             </a>
         </div>
-        <h2 class="publications__header">
+        <p class="publications__header">
             We have something to tell
-        </h2>
+        </p>
         <div class="publications__container">
             <div class="publications__box">
                 <a class="publications__link"
-                   href="#"><img class="publications__img"
-                                 src="../img/publication/publication-1-height.jpg"
-                                 alt="">
+                   href="#">
+                    <img class="publications__img_height"
+                         src="../img/publication/publication-1-height.jpg"
+                         alt="">
+                    <img class="publications__img"
+                         src="../img/publication/publication-1.jpg"
+                         alt="">
+                    <img class="publications__img_small"
+                         src="../img/publication/publication-1-small.jpg"
+                         alt="">
+                    <img class="publications__img_tablet"
+                         src="../img/publication/publication-1-tablet-SD.jpg"
+                         alt="">
                 </a>
                 <a class="publications__link"
                    href="#">
-                    <h4 class="publications__text">
+                    <p class="publications__text">
                         Equity associate
-                    </h4>
+                    </p>
                 </a>
                 <p class="publications__data">
                     April 22
@@ -208,15 +229,25 @@
             </div>
             <div class="publications__box">
                 <a class="publications__link"
-                   href="#"><img class="publications__img"
-                                 src="../img/publication/publication-2-height.jpg"
-                                 alt="">
+                   href="#">
+                    <img class="publications__img_height"
+                         src="../img/publication/publication-2-height.jpg"
+                         alt="">
+                    <img class="publications__img"
+                         src="../img/publication/publication-2.jpg"
+                         alt="">
+                    <img class="publications__img_small"
+                         src="../img/publication/publication-2-small.jpg"
+                         alt="">
+                    <img class="publications__img_tablet "
+                         src="../img/publication/publication-2-tablet-SD.jpg"
+                         alt="">
                 </a>
                 <a class="publications__link"
                    href="#">
-                    <h4 class="publications__text">
+                    <p class="publications__text">
                         Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
-                    </h4>
+                    </p>
                 </a>
                 <p class="publications__data">
                     September 29
@@ -230,15 +261,28 @@
             </div>
             <div class="publications__box">
                 <a class="publications__link"
-                   href="#"><img class="publications__img"
-                                 src="../img/publication/publication-3-heigth.jpg"
-                                 alt="">
+                   href="#">
+                    <img class="publications__img_height"
+                         src="../img/publication/publication-3-heigth.jpg"
+                         alt="">
+                    <img class="publications__img"
+                         src="../img/publication/publication-3.jpg"
+                         alt="">
+                    <img class="publications__img_small"
+                         src="../img/publication/publication-3-small.jpg"
+                         alt="">
+                    <img class="publications__img_tablet publications__img_tablet-hidden"
+                         src="../img/publication/publication-3-tablet-SD.jpg"
+                         alt="">
+                    <img class="publications__img_mobile "
+                         src="../img/publication/publication-3-mobile.jpg"
+                         alt="">
                 </a>
                 <a class="publications__link"
                    href="#">
-                    <h4 class="publications__text">
+                    <p class="publications__text">
                         Millennial Testament
-                    </h4>
+                    </p>
                 </a>
                 <p class="publications__data">
                     August 19
