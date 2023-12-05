@@ -14,8 +14,13 @@
 <header class="center header">
     <nav class="services-nav">
         <a href="../index.html"
-           class="nav__logo"><img src="../img/logo-services.svg"
-                                  alt="hlegal logo">
+           class="nav__logo">
+            <img src="../img/logo-services.svg"
+                 alt="hlegal logo"
+                 class="services-nav__logo_desktop">
+            <img src="../img/logo-mobile-services.svg"
+                 alt="hlegal logo"
+                 class="services-nav__logo_mobile">
         </a>
         <div class="nav__container">
         </div>
@@ -105,7 +110,7 @@
             <li class="nav__item"><a class="nav__link nav__link_mobile"
                                      href="#">contact</a></li>
         </ol>
-        <label class="nav__menu"
+        <label class="nav__menu services-nav__menu"
                for="open_menu">
             <span></span>
             <span></span>
@@ -123,7 +128,8 @@
                 work distracts you from doing business. But there is not much work to do to hire an in-house
                 lawyer.
             </p>
-            <p class="offer__desc">In addition, over time, the work will become the same type and uninteresting for a
+            <p class="offer__desc offer__desc_padding">In addition, over time, the work will become the same type and
+                uninteresting for a
                 full-time
                 lawyer.
                 And
@@ -150,7 +156,7 @@
                     carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);
                 </li>
             </ul>
-            <ul class="services-offer__item">
+            <ul class="services-offer__item ">
                 <li class="services-offer__list">support of procedures related to the lease of state property in the
                     port;
                 </li>
@@ -175,9 +181,9 @@
     <section class="shadow-light shadow-light-services">
         <br>
     </section>
-    <section class="publications center">
+    <section class="publications center services-publication">
         <div class="publications__merge">
-            <a class="publications__item"
+            <a class="publications__item services-publication__item"
                href="#">Publications
                 <svg class="publications__arrow"
                      width="12"
@@ -190,8 +196,8 @@
                 </svg>
             </a>
         </div>
-        <p class="publications__header">
-            We have something to tell
+        <p class="publications__header services-publication__header">
+            Recommended
         </p>
         <div class="publications__container">
             <div class="publications__box">
@@ -208,6 +214,9 @@
                          alt="">
                     <img class="publications__img_tablet"
                          src="../img/publication/publication-1-tablet-SD.jpg"
+                         alt="">
+                    <img class="publications__img_desktop"
+                         src="../img/publication/publication-1-descktop-SD.jpg"
                          alt="">
                 </a>
                 <a class="publications__link"
@@ -241,6 +250,9 @@
                          alt="">
                     <img class="publications__img_tablet "
                          src="../img/publication/publication-2-tablet-SD.jpg"
+                         alt="">
+                    <img class="publications__img_desktop"
+                         src="../img/publication/publication-2-descktop-SD.jpg"
                          alt="">
                 </a>
                 <a class="publications__link"
@@ -277,6 +289,9 @@
                     <img class="publications__img_mobile "
                          src="../img/publication/publication-3-mobile.jpg"
                          alt="">
+                    <img class="publications__img_desktop"
+                         src="../img/publication/publication-3-descktop-SD.jpg"
+                         alt="">
                 </a>
                 <a class="publications__link"
                    href="#">
@@ -299,7 +314,7 @@
 </main>
 <footer class="center footer">
     <hr class="footer__hl">
-    <nav class="footer__nav">
+    <nav class="footer__nav footer__nav-places">
         <ol class="footer__list footer__list-places">
             <li class="footer__item"><a class="footer__link"
                                         href="https://maps.app.goo.gl/XzJcU9NAhQN5swus5"
@@ -372,6 +387,7 @@
             <li><a href="#">contact@forstudy.space</a></li>
         </ol>
     </nav>
+    <p class="footer__policy footer__policy_mobile">© 2021 HLEGAL Law company, LLC</p>
 </footer>
 </body>
 </html>

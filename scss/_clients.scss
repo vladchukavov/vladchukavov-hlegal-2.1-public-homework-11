@@ -127,6 +127,14 @@
       grid-template-columns: repeat(4, 356px);
       padding-bottom: 0;
     }
+
+    &__box {
+
+      &:nth-child(1), &:nth-child(4), &:nth-child(9), &:nth-child(12) {
+        border-radius: 0;
+      }
+
+    }
   }
 }
 
@@ -161,28 +169,10 @@
     padding-left: calc(50vw - 398px);
     padding-right: calc(50vw - 398px);
 
-
     &__container {
       grid-template-columns: repeat(3, 256px);
       grid-template-rows: repeat(4, 120px);
       padding-bottom: 0;
-    }
-
-    &__box {
-      &:nth-child(3) {
-        background-color: #F48B30;
-        border-top-right-radius: 10px;
-      }
-
-      &:nth-child(4) {
-        background-color: #9E4DC3;
-        border-top-right-radius: 0;
-      }
-
-      &:nth-child(10) {
-        background-color: #282240;
-        border-bottom-left-radius: 10px;
-      }
     }
   }
 }

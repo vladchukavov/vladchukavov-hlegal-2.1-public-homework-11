@@ -78,7 +78,6 @@
 
     &__container {
       gap: 20px;
-      padding-bottom: 60px;
     }
 
     &__header {
@@ -104,6 +103,10 @@
       justify-content: flex-start;
       padding: 0;
       overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     &__line {
@@ -123,6 +126,7 @@
       flex-direction: column;
       gap: 0;
       padding-left: 0;
+      padding-bottom: 60px;
     }
 
     &__header {
@@ -167,7 +171,6 @@
 
 @media screen and (max-width: 320px) {
   .menu {
-
     &__desc {
       font-size: 19px;
       width: 255px;

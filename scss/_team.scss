@@ -57,6 +57,13 @@
     display: block;
   }
 
+  &__img_tabled {
+    display: none;
+  }
+  &__img_tabled-sd {
+    display: none;
+  }
+
   &__img_media {
     display: none;
     align-self: stretch;
@@ -155,6 +162,10 @@
     }
 
     &__img_media {
+      display: none;
+    }
+
+    &__img_tabled {
       display: block;
       width: 400px;
       height: 528px;
@@ -186,10 +197,16 @@
       height: 298px;
     }
 
-    &__img_media {
+    &__img_tabled {
+      display: none;
+    }
+
+    &__img_tabled-sd {
       display: block;
-      width: 650px;
-      height: 500px;
+    }
+
+    &__img_media {
+      display: none;
     }
 
     &__container {
@@ -244,6 +261,7 @@
   .team {
     margin-top: 30px;
     margin-left: 0;
+
     &__img_mobile {
       display: block;
       width: 300px;

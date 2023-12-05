@@ -36,7 +36,7 @@
     font-size: 38px;
     font-weight: 700;
     margin: 0;
-    padding-bottom: 23px;
+    padding-bottom: 40px;
   }
 
   &__container {
@@ -66,9 +66,11 @@
 
   &__img {
     display: none;
-    width: 420px;
-    max-height: 200px;
     border-radius: 8px 8px 0 0;
+  }
+
+  &__img_desktop {
+    display: none;
   }
 
   &__img_small {
@@ -131,17 +133,19 @@
 
 @media screen and (max-width: 1440px) {
   .publications {
+
     &__container {
       gap: 30px;
+    }
+
+    &__img_desktop {
+      display: block;
     }
 
     &__img_height {
       display: none;
     }
 
-    &__img {
-      display: block;
-    }
 
     &__box {
       min-width: 420px;
@@ -160,6 +164,10 @@
     }
 
     &__img {
+      display: none;
+    }
+
+    &__img_desktop {
       display: none;
     }
 

@@ -11,7 +11,10 @@
   &__nav {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+  }
+
+  &__nav-places {
+    padding-top: 20px;
   }
 
   &__list {
@@ -44,10 +47,6 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
-  }
-
-  &__list-contact {
-    padding-top: 18px;
   }
 
   &__list-contact li {
